@@ -2,3 +2,10 @@ language: java
 
 jdk:
  - oraclejdk8
+
+
+before_install:
+ - pip install codecov
+
+after_success:
+ - bast <(curl -s http://codecov.io/bash)

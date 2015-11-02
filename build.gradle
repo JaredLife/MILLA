@@ -10,6 +10,7 @@
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'jacoco'
 
 mainClassName = "is.ru.BusinessLogic"
 
@@ -20,6 +21,14 @@ jar {
 }
 
 
+jacocoTestReport {
+	reports {
+		xml.enabled = true
+		html.enabled = true
+	}
+}
+
+check.dependsOn jacocoTestReport
 
 
 // In this section you declare where to find the dependencies of your project
