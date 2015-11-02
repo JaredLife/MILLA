@@ -39,25 +39,5 @@ public class Node {
 	{
 		return number;
 	}
-	
-	public String nodeToString()
-	{
-		String cell = "___\n|";
 		
-		if(owner != null){
-			if(owner.getNumber() == 1){
-				cell += "o|";
-			}else{
-				cell += "x|";
-			}
-		}else{
-			cell += owner.getNumber() + "|";
-		}
-
-		//TODO: add underline
-		//cell += "underline";
-		
-		return cell;
-	}
-	
 }
