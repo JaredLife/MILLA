@@ -27,18 +27,18 @@ public class Grid {
 			
 	public String toString()
 	{
-		String grid = "-------------";
+		String grid = "-------------\n|";
 		for(Node i : nodes){
 			for(int k = 0; k < 3; k++){			
 				for(int j = 0; j < 3; j++){
-					String symbol = "";
+					String symbol = " ";
 					
 					if(i.getOwner() == null){
 						symbol += i.getNumber();	
 					}else{
 						symbol += i.getOwner().getSymbol();
 					}
-					grid += "\n| " + symbol + " |\n";   
+					grid += symbol + " |";   
 				}
 
 				grid += "\n-------------";
@@ -52,7 +52,7 @@ public class Grid {
 	{
 		if(nodes[0].getOwner() ==  nodes[1].getOwner() && nodes[1].getOwner() ==  nodes[2].getOwner() && nodes[1].getOwner() != null){
 			return true;
-		}else if(nodes[3].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[5].getOwner() && nodes[1].getOwner() != null){
+		}else if(nodes[3].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[5].getOwner() && nodes[3].getOwner() != null){
                         return true;
 		}else if(nodes[6].getOwner() ==  nodes[7].getOwner() && nodes[7].getOwner() ==  nodes[8].getOwner() && nodes[6].getOwner() != null){
                         return true;
