@@ -1,7 +1,9 @@
+package is.ru.MILLA;
+
 public class Player {
 	
-	private static int PlayerNumber;	
-	private static String PlayerName;
+	private int PlayerNumber;	
+	private String PlayerName;
 	
 	public Player(int number, String name)
 	{
