@@ -34,23 +34,18 @@ public class GridTest {
 
 	
 	
-	/*	
+		
 	@Test
 	public void testToString()
 	{
 		Grid testGrid = new Grid();
 		
-		String compareString = "-------------\n" 
-					+ "| 1 | 2 | 3 |\n" 
-					+ "-------------\n" 
-					+ "| 4 | 5 | 6 |\n"
-					+ "-------------\n" 
-					+ "| 7 | 8 | 9 |\n"
-					+ "-------------";
-		
+		String compareString = "-------------\n| 1 | 2 | 3 |\n-------------\n| 4 | 5 | 6 |\n-------------\n| 7 | 8 | 9 |\n-------------\n";
+
+
 		assertEquals(compareString, testGrid.toString());
 	}
-	*/	
+		
 
 	@Test
 	public void testIsWinner()
