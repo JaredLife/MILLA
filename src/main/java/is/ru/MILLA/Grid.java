@@ -27,44 +27,44 @@ public class Grid {
 			
 	public String toString()
 	{
-		String grid = "-------------\n| ";
+		String grid = "-------------";
 		for(Node i : nodes){
 			for(int k = 0; k < 3; k++){			
 				for(int j = 0; j < 3; j++){
 					String symbol = "";
 					
 					if(i.getOwner() == null){
-						symbol = Integer.toString(i.getNumber());	
+						symbol += i.getNumber();	
 					}else{
-						symbol = i.getOwner().getSymbol();
+						symbol += i.getOwner().getSymbol();
 					}
-					grid += symbol + " |";   
+					grid += "\n| " + symbol + " |\n";   
 				}
 
-				grid += "------------- \n";
+				grid += "\n-------------";
 			}
 		}
 		
 		return grid;
 	}
 
-	public bool isWinner()
+	public boolean isWinner()
 	{
-		if(nodes[0].getOwner() ==  nodes[1].getOwner() && nodes[1].getOwner() ==  nodes[2].getOwner()){
+		if(nodes[0].getOwner() ==  nodes[1].getOwner() && nodes[1].getOwner() ==  nodes[2].getOwner() && nodes[1].getOwner() != null){
 			return true;
-		}else if(nodes[3].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[5].getOwner()){
+		}else if(nodes[3].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[5].getOwner() && nodes[1].getOwner() != null){
                         return true;
-		}else if(nodes[6].getOwner() ==  nodes[7].getOwner() && nodes[7].getOwner() ==  nodes[8].getOwner()){
+		}else if(nodes[6].getOwner() ==  nodes[7].getOwner() && nodes[7].getOwner() ==  nodes[8].getOwner() && nodes[6].getOwner() != null){
                         return true;
-		}else if(nodes[0].getOwner() ==  nodes[3].getOwner() && nodes[3].getOwner() ==  nodes[6].getOwner()){
+		}else if(nodes[0].getOwner() ==  nodes[3].getOwner() && nodes[3].getOwner() ==  nodes[6].getOwner() && nodes[0].getOwner() != null){
                         return true;
-		}else if(nodes[1].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[7].getOwner()){
+		}else if(nodes[1].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[7].getOwner() && nodes[1].getOwner() != null){
                         return true;
-		}else if(nodes[2].getOwner() ==  nodes[5].getOwner() && nodes[5].getOwner() ==  nodes[8].getOwner()){
+		}else if(nodes[2].getOwner() ==  nodes[5].getOwner() && nodes[5].getOwner() ==  nodes[8].getOwner() && nodes[2].getOwner() != null){
                         return true;
-		}else if(nodes[0].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[8].getOwner()){
+		}else if(nodes[0].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[8].getOwner() && nodes[0].getOwner() != null){
                         return true;
-		}else if(nodes[2].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[6].getOwner()){
+		}else if(nodes[2].getOwner() ==  nodes[4].getOwner() && nodes[4].getOwner() ==  nodes[6].getOwner() && nodes[2].getOwner() != null){
                         return true;
 		}else{
 			return false;

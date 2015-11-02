@@ -2,8 +2,8 @@ package is.ru.MILLA;
 
 public class Node {
 	
-	private static Player owner;
-	private static int number;
+	private Player owner;
+	private int number;
 	
 	public Node(int num)
 	{

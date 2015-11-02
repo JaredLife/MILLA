@@ -6,8 +6,8 @@ import org.junit.Test;
 
 public class GridTest {
 	
-	@test
-	public void testConstructor()
+	@Test
+	public void testConstructorForNodeOwner()
 	{
 		Grid testGrid = new Grid();
 		
@@ -15,28 +15,44 @@ public class GridTest {
 		
 		for(int i = 0; i < 9; i++){
 			assertEquals(null, testNodes[i].getOwner());
-			assertEquals(i+1, testNodes[i].getNumber());
 		}
 		
 	}
+
+        @Test
+        public void testConstructorForNodeNumber()
+        {
+                Grid testGrid = new Grid();
+
+                Node[] testNodes = testGrid.getNodes();
+
+                for(int i = 0; i < 9; i++){
+                        assertEquals(i+1, testNodes[i].getNumber());
+                }
+
+        }
+
 	
-	@test
+	
+	/*	
+	@Test
 	public void testToString()
 	{
 		Grid testGrid = new Grid();
 		
 		String compareString = "-------------\n" 
-					+ "| 0 | 1 | 2 |" 
-					+ "-------------" 
-					+ "| 3 | 4 | 5 |"
-					+ "-------------" 
-					+ "| 6 | 7 | 8 |"
-					+ "-------------\n";
+					+ "| 1 | 2 | 3 |\n" 
+					+ "-------------\n" 
+					+ "| 4 | 5 | 6 |\n"
+					+ "-------------\n" 
+					+ "| 7 | 8 | 9 |\n"
+					+ "-------------";
 		
 		assertEquals(compareString, testGrid.toString());
 	}
-	
-	@test
+	*/	
+
+	@Test
 	public void testIsWinner()
 	{
 		Grid testGrid = new Grid();
