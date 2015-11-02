@@ -4,7 +4,18 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 
-public class NodeTest {
+public class NodeTest
+{
+	
+
+
+	@Test
+	public void testNodeNumber()
+	{
+		Node testNode = new Node(1);
+		assertEquals(1, testNode.getNumber());
+	}
+
 
 	@Test	
 	public void testSetOwnerNonEmpty()
