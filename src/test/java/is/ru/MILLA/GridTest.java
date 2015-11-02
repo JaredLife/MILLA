@@ -53,7 +53,7 @@ public class GridTest {
 	*/	
 
 	@Test
-	public void testIsWinner()
+	public void testIsWinnerCond1()
 	{
 		Grid testGrid = new Grid();
 		Player player1 = new Player(1, "MorganFreeman");
@@ -65,5 +65,124 @@ public class GridTest {
 		assertEquals(true, testGrid.isWinner());
 	}
 		
+        @Test
+        public void testIsWinnerCond2()
+        {
+                Grid testGrid = new Grid();
+                Player player1 = new Player(1, "MorganFreeman");
+
+                testGrid.changeNodeOwnerInGrid(player1, 4);
+                testGrid.changeNodeOwnerInGrid(player1, 5);
+                testGrid.changeNodeOwnerInGrid(player1, 6);
+
+                assertEquals(true, testGrid.isWinner());
+        }
+
+	@Test
+        public void testIsWinnerCond3()
+        {
+                Grid testGrid = new Grid();
+                Player player1 = new Player(1, "MorganFreeman");
+
+                testGrid.changeNodeOwnerInGrid(player1, 7);
+                testGrid.changeNodeOwnerInGrid(player1, 8);
+                testGrid.changeNodeOwnerInGrid(player1, 9);
+
+                assertEquals(true, testGrid.isWinner());
+        }
+
+	@Test
+        public void testIsWinnerCond4()
+        {
+                Grid testGrid = new Grid();
+                Player player1 = new Player(1, "MorganFreeman");
+
+                testGrid.changeNodeOwnerInGrid(player1, 1);
+                testGrid.changeNodeOwnerInGrid(player1, 4);
+                testGrid.changeNodeOwnerInGrid(player1, 7);
+
+                assertEquals(true, testGrid.isWinner());
+        }
+
+	@Test
+        public void testIsWinnerCond5()
+        {
+                Grid testGrid = new Grid();
+                Player player1 = new Player(1, "MorganFreeman");
+
+                testGrid.changeNodeOwnerInGrid(player1, 2);
+                testGrid.changeNodeOwnerInGrid(player1, 5);
+                testGrid.changeNodeOwnerInGrid(player1, 8);
+
+                assertEquals(true, testGrid.isWinner());
+        }
+
+	@Test
+        public void testIsWinnerCond6()
+        {
+                Grid testGrid = new Grid();
+                Player player1 = new Player(1, "MorganFreeman");
+
+                testGrid.changeNodeOwnerInGrid(player1, 3);
+                testGrid.changeNodeOwnerInGrid(player1, 6);
+                testGrid.changeNodeOwnerInGrid(player1, 9);
+
+                assertEquals(true, testGrid.isWinner());
+        }
+
+	@Test
+        public void testIsWinnerCond7()
+        {
+                Grid testGrid = new Grid();
+                Player player1 = new Player(1, "MorganFreeman");
+
+                testGrid.changeNodeOwnerInGrid(player1, 1);
+                testGrid.changeNodeOwnerInGrid(player1, 5);
+                testGrid.changeNodeOwnerInGrid(player1, 9);
+
+                assertEquals(true, testGrid.isWinner());
+        }
+
+	@Test
+        public void testIsWinnerCond8()
+        {
+                Grid testGrid = new Grid();
+                Player player1 = new Player(1, "MorganFreeman");
+
+                testGrid.changeNodeOwnerInGrid(player1, 3);
+                testGrid.changeNodeOwnerInGrid(player1, 5);
+                testGrid.changeNodeOwnerInGrid(player1, 7);
+
+                assertEquals(true, testGrid.isWinner());
+        }
+
+	@Test
+        public void testIsWinnerCondNoWinnerEmptyGrid()
+        {
+                Grid testGrid = new Grid();
+
+                assertEquals(false, testGrid.isWinner());
+        }
+
+	@Test
+        public void testIsWinnerNoWinnerNonEmptyGrid()
+        {
+                Grid testGrid = new Grid();
+                Player player1 = new Player(1, "MorganFreeman");
+		Player player2 = new Player(2, "NicholasCage");
+
+	        testGrid.changeNodeOwnerInGrid(player2, 1);
+                testGrid.changeNodeOwnerInGrid(player1, 2);
+                testGrid.changeNodeOwnerInGrid(player2, 3);
+                testGrid.changeNodeOwnerInGrid(player1, 4);
+                testGrid.changeNodeOwnerInGrid(player1, 5);
+                testGrid.changeNodeOwnerInGrid(player2, 6);               
+		testGrid.changeNodeOwnerInGrid(player1, 7);
+                testGrid.changeNodeOwnerInGrid(player2, 8);
+                testGrid.changeNodeOwnerInGrid(player1, 9);
+
+                assertEquals(false, testGrid.isWinner());
+        }
+
 } 
 
