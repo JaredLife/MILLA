@@ -18,5 +18,19 @@ public class PlayerTest {
 		Player TestPlayer = new Player(1, "MorganFreeman");
 		assertEquals("MorganFreeman", TestPlayer.getName());
 	}
-	
+
+	@Test
+	public void testGetSymbolForP1()
+	{
+		Player TestPlayer = new Player(1, "MorganFreeman");
+		assertEquals("O", TestPlayer.getSymbol());
+	}
+
+        @Test
+        public void testGetSymbolForP2()
+        {
+                Player TestPlayer = new Player(2, "MorganFreeman");
+                assertEquals("X", TestPlayer.getSymbol());
+        }
+
 }
