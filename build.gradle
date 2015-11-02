@@ -12,11 +12,11 @@ apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'jacoco'
 
-mainClassName = "is.ru.BusinessLogic"
+mainClassName = "is.ru.MILLA.TicTacToe"
 
 jar {
  manifest {
- attributes("Main-Class": "is.ru.BusinessLogic")
+ attributes("Main-Class": "is.ru.MILLA.TicTacToe")
  }
 }
 
