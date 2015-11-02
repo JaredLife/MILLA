@@ -11,6 +11,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'jacoco'
+apply plugin: 'checkstyle'
 
 mainClassName = "is.ru.MILLA.TicTacToe"
 
@@ -29,6 +30,7 @@ jacocoTestReport {
 }
 
 check.dependsOn jacocoTestReport
+
 
 
 // In this section you declare where to find the dependencies of your project
