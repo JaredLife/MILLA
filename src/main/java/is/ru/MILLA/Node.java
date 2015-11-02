@@ -1,3 +1,5 @@
+package is.ru.MILLA;
+
 public class Node {
 	
 	private static Player owner;
