@@ -5,10 +5,11 @@ public class Grid {
 	
 	private Node[] nodes = new Node[9];
 	
-	
+
 	public Grid()
 	{
-		for(int i = 0; i < 9; i++){
+		for(int i = 0; i < 9; i++)
+		{
 			Node node = new Node(i+1);
 			nodes[i] = node;
 		}
@@ -26,27 +27,44 @@ public class Grid {
 
 			
 	public String toString()
-	{
-		String grid = "-------------\n|";
-		for(Node i : nodes){
-			for(int k = 0; k < 3; k++){			
-				for(int j = 0; j < 3; j++){
-					String symbol = " ";
-					
-					if(i.getOwner() == null){
-						symbol += i.getNumber();	
-					}else{
-						symbol += i.getOwner().getSymbol();
-					}
-					grid += symbol + " |";   
-				}
+        {
+    	int counter = 0;
+    	
+        String grid = "-------------\n|";
+            
+        for(int k = 0; k < 3; k++)
+        {
+              for(int j = 0; j < 3; j++)
+              {                  
+		String symbol = " ";
 
-				grid += "\n-------------";
-			}
-		}
-		
-		return grid;
-	}
+
+                  if(nodes[counter].getOwner() == null)
+                  {
+                          symbol += nodes[counter].getNumber();
+                  }
+                  else
+                  {
+                          symbol += nodes[counter].getOwner().getSymbol();
+                  }
+                  grid += symbol + " |";
+                  counter++;
+              }
+        
+              if(k < 2)
+              {
+            	  grid += "\n-------------\n|";
+              }
+              else
+              {
+            	  grid += "\n-------------\n";
+              }
+              
+        }
+            
+
+            return grid;
+        }
 
 	public boolean isWinner()
 	{

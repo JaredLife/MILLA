@@ -1,9 +1,11 @@
 package is.ru.MILLA;
 
+
 public class BusinessLogic {
 	private Player player1;
 	private Player player2;
 	private Grid grid;
+
 
 	public BusinessLogic(Player newPlayer1, Player newPlayer2)
 	{
@@ -20,6 +22,7 @@ public class BusinessLogic {
 	public boolean isValidInput(int input)
 	{
 		Node[] nodes = grid.getNodes();
+
 
 		if(nodes[input-1].isEmpty()){
 			return true;

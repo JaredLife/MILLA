@@ -2,6 +2,7 @@ package is.ru.MILLA;
 
 import java.util.Scanner;
 
+
 public class TicTacToe{	
 
 	private Scanner scan;
@@ -51,7 +52,7 @@ public class TicTacToe{
 	
 	private void winMessage(Player winner, Player loser)
 	{	
-		System.out.println(winner.getName() + " has slaughtered " + loser + "!");
+		System.out.println(winner.getName() + " has slaughtered " + loser.getName() + "!");
 	}
 
 	public boolean continueMessage()
@@ -117,10 +118,10 @@ public class TicTacToe{
 				System.out.println("You are equally bright!    ...or stupid.");
 				gameOver = true;
 			}
-		
+			turnNum++;	
 		}
 	}
-		
+
 
 	public static void main(String[] args)
 	{
@@ -138,12 +139,9 @@ public class TicTacToe{
 			t.playGame(player1, player2);
 
 			play = t.continueMessage();
-		}
-                 
+		} 
+
 	}
-  
-} 
 
-
-
+}
 	
