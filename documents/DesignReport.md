@@ -75,7 +75,7 @@
 *getSymbol()
 
 
-###Node - Nóður frá 1-9 og á leikmaður einhverja nóðu er það x eða o, en ef enginn á nóðu er null.###
+###Node - Nóður frá 1-9, ef leikmaður á tiltekna nóðu er það x eða o, en ef enginn á er null.###
 
 *Node(int num)
 
@@ -87,4 +87,4 @@
 
 *getNumber()
 
-####TicTacToe.java hefur svo aðgang að þessum 3 klösum og byggir forriti####
+####TicTacToe.java hefur svo aðgang að þessum 3 klösum og byggir forritið####
