@@ -1,17 +1,17 @@
-//Todo implementation!
-
+package is.ru.MILLA;
 
 
 public class BusinessLogic
 {
-//	public void test()
-//	{
-//		int b = 1; 
-//	}
+	private Grid BlGrid;
 
-//	public static void main(String[] args) {
+	public BusinessLogic()
+	{
+	   BlGrid = new Grid();
+	}
 
-   	
- // 	    }
-   // }
+	public String printGrid()
+	{
+	   return BlGrid.toString();
+	}
 }
