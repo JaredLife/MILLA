@@ -53,7 +53,6 @@
 ## Klasar ##
 
 ###Grid - Griddið býr til nóður frá 1-9 og win lógík###
-
 * Grid()
 * getNodes()
 * changeNodeOwnerInGrid(Player owner, int nodeNumber)
@@ -61,7 +60,6 @@
 * isWinner()
 
 ###Player - Býr til leikmann###
-
 * Player(int number, String name)
 * getNumber()
 * getName()
@@ -69,7 +67,6 @@
 
 
 ###Node - Nóða á tilvik af leikmanni en efengin nóða á leikmann er tilvikið null.###
-
 * Node(int num)
 * setOwner(Player player)
 * isEmpty()
