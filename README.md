@@ -7,16 +7,17 @@
 
 ![alt text](http://pixel.nymag.com/imgs/daily/vulture/2015/05/15/recaps/15-silicon-valley.w1200.h630.jpg "Jared")
 
-A Late-term Assignment in Hugb1 in Reykjavik University. 
-The game TicTacToe!
+## Við vitum að það er vylla í nafninu! ##
+* Síðannarverkefni fyrir Hugbúnaðarfræði 1 í Háskólanum í Reykjavík.
+* Leikurinn TicTacToe!
 
-## Members of team Royale with Cheese: ##
+## Meðlimir hópsins Royale with Cheese: ##
 * Jóhannes Páll Magnússon
 * Orri Ólafsson
 * Stefán Þór Halldórsson
 * Gunnar Páll Viðarsson
 
-## Documentation ##
+## Skrár ##
 * [Developers manual](Docs/DevManual.md)
 * [Administration manual](Docs/AdminManual.md) 
 * [Design report](Docs/DesignReport.md)
