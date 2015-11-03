@@ -46,6 +46,22 @@ public class GridTest {
 		assertEquals(compareString, testGrid.toString());
 	}
 		
+	
+	@Test
+	public void testToStringWithOwner()
+	{
+		Grid testGrid = new Grid();
+		
+		Player testPlayer = new Player(1, "Morgan");
+
+		testGrid.changeNodeOwnerInGrid(testPlayer, 1);
+
+		String compareString = "-------------\n| O | 2 | 3 |\n-------------\n| 4 | 5 | 6 |\n-------------\n| 7 | 8 | 9 |\n-------------\n";
+
+		assertEquals(compareString, testGrid.toString());
+	}
+
+
 
 	@Test
 	public void testIsWinnerCond1()
