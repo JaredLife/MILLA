@@ -25,13 +25,11 @@ public class BusinessLogic
         {
                 Node[] nodes = grid.getNodes();
 
-		if(input < 1 || input > 9){
+		if(input < 1 || input > 9 || !nodes[input-1].isEmpty()){
 			return false;
-                }else if(nodes[input-1].isEmpty()){
-                        return true;
                 }else{
-                        return false;
-                }
+                        return true;
+		}                
         }	
 	
 	public void markNode(int input, int turnNum)
