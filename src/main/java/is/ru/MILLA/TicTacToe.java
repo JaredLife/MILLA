@@ -24,7 +24,7 @@ public class TicTacToe{
 
         public Player newPlayer(int playerNum)
         {
-                System.out.println("Player 1: ");
+                System.out.println("Player " + playerNum + ": ");
                 String playerName = scan.next();
                 Player player = new Player(playerNum, playerName);
 
