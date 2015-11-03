@@ -3,7 +3,7 @@
 Þetta verkefni er lítið console forrit sem notar Java
 
 ## Requirements ##
-* Þarf Java 8 eða nýrra til að virka (Java JDK (we used oraclejdk8))
+* Java - (Java JDK (við notuðum java 8 - oraclejdk8))
 * Til að builda notum við gradle 
 og er hægt að niðurhala því í console-inu
 
@@ -27,7 +27,7 @@ og er hægt að niðurhala því í console-inu
 ## Til að setja upp verkefnið á tölvuna þarf að fylgja þessum þrepum: ##
 
 1. Up to date Linux workstation
-2. Ná java →  sudo apt-get install git
+2. Ná java  → sudo apt-get install openjdk-7-jdk
 3. Ná í git → sudo apt-get install git
 4. Tengjast github verkefninu → git clone git@github.com:JaredLife/MILLA.git
 
