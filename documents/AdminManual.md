@@ -3,6 +3,7 @@
 ## What you need ##
 * Java JDK (we used oraclejdk8)
 * Java JRE 1.8, to see your current version run ->$ java -version 
+* To install java you can run ->$ sudo apt-get install openjdk-7-jdk
 * Git
         * Linux console command: "apt-get-install git"
         * Otherwise click here to [download git](https://git-scm.com/downloads)
