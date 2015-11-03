@@ -115,9 +115,56 @@ public class BusinessLogicTest {
             String compareString = "-------------\n| X | 2 | 3 |\n-------------\n| 4 | 5 | 6 |\n-------------\n| 7 | 8 | 9 |\n-------------\n";
             assertEquals(compareString, bl.getGrid());
         }
-
-		
 	
+        @Test
+	public void testBingoForEmptyGrid()
+	{
+		
+            Player player1 = new Player(1, "Morgan");
+            Player player2 = new Player(2, "Nicolas");
+
+            BusinessLogic bl = new BusinessLogic(player1, player2);
+	
+	    assertEquals(false, bl.bingo());
+	}
+	
+			
+        @Test
+	public void testBingoWithWinner()
+	{
+		
+            Player player1 = new Player(1, "Morgan");
+            Player player2 = new Player(2, "Nicolas");
+
+            BusinessLogic bl = new BusinessLogic(player1, player2);
+	
+	    bl.markNode(1, 0);
+	    bl.markNode(2, 2);
+	    bl.markNode(3, 4);
+	    assertEquals(true, bl.bingo());
+	}
+
+	
+        @Test
+	public void testBingoWithNoWinner()
+	{
+		
+            Player player1 = new Player(1, "Morgan");
+            Player player2 = new Player(2, "Nicolas");
+
+            BusinessLogic bl = new BusinessLogic(player1, player2);
+	
+	    bl.markNode(1, 0);
+	    bl.markNode(2, 1);
+	    bl.markNode(3, 2);
+	    bl.markNode(5, 3);
+	    bl.markNode(4, 4);
+	    bl.markNode(7, 5);
+	    bl.markNode(9, 6);
+	    bl.markNode(6, 7);
+	    bl.markNode(8, 8);
+	    assertEquals(false, bl.bingo());
+	}
 }
 
 

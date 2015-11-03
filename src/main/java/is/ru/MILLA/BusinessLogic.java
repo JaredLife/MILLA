@@ -42,4 +42,12 @@ public class BusinessLogic
                         grid.changeNodeOwnerInGrid(player2, input);
                 }
         }
+
+	
+	public boolean bingo()
+        {
+                return grid.isWinner();
+        }
+
+
 }
