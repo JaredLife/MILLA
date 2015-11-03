@@ -45,4 +45,4 @@
 
 ## Prufa kóðan - Test the code ##
 * Til að gera Unit test þá notum við Gradle sem er tengt við JUnit , scripturnar okkar í bin keyra Gradle wrapper með að nota skipunina → /bin/unit_test
-* Til að sjá code coverage í [README](./MILLA/README.md) og líka á [CodeCov vefsíðunni](https://codecov.io/github/JaredLife/MILLA)
+* Til að sjá code coverage í [README](README.md) og líka á [CodeCov vefsíðunni](https://codecov.io/github/JaredLife/MILLA)
