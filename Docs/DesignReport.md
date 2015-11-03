@@ -1,5 +1,9 @@
 # Design report #
 
+### Forritunar reglur ###
+* Bjuggum til branch sem heitir "CheckStylePlugin" með sem notast við forritunarreglur frá [Checkstyle](https://github.com/checkstyle/checkstyle/blob/master/src/main/r$
+
+
 * Lítið og einfalt forrit sem lætur notanda spila TicTacToe(Myllu) við annan notanda á sömu tölvu.
 
 * Við teiknum leikborðið á skjánnum í 3x3 char fylki:

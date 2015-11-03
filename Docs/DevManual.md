@@ -10,6 +10,9 @@
 
 ## Til að byrja - Get started ##
 
+### Forritunar reglur ###
+* Bjuggum til branch sem heitir "CheckStylePlugin" með sem notast við forritunarreglur frá [Checkstyle](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml)
+
 ### Til að setja upp verkefnið á tölvuna þarf að fylgja þessum þrepum: ###
 
 1. Ná í SSH client - Hópurinn okkar notaði putty
