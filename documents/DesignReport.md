@@ -52,8 +52,7 @@
 
 ## Klasar ##
 
-###Grid###
-*Grid - Prentar út borðið og win lógík
+###Grid - Prentar út borðið og win lógík###
 
 *Grid()
 
@@ -65,8 +64,7 @@
 
 *isWinner()
 
-###Player###
-*Player - Býr til leikmann
+###Player - Býr til leikmann###
 
 *Player(int number, String name)
 
@@ -76,8 +74,8 @@
 
 *getSymbol()
 
-###Node###
-*Node - Nóður frá 1-9 og á leikmaður einhverja nóðu er það x eða o, en ef enginn á nóðu er null.
+
+###Node - Nóður frá 1-9 og á leikmaður einhverja nóðu er það x eða o, en ef enginn á nóðu er null.###
 
 *Node(int num)
 
@@ -89,4 +87,4 @@
 
 *getNumber()
 
-*TicTacToe.java hefur svo aðgang að þessum 3 klösum og byggir forriti
+####TicTacToe.java hefur svo aðgang að þessum 3 klösum og byggir forriti####
