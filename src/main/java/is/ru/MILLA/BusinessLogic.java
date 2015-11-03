@@ -34,5 +34,12 @@ public class BusinessLogic
                 }
         }	
 	
-
+	public void markNode(int input, int turnNum)
+        {
+                if(turnNum % 2 == 0){
+                        grid.changeNodeOwnerInGrid(player1, input);
+                }else{
+                        grid.changeNodeOwnerInGrid(player2, input);
+                }
+        }
 }

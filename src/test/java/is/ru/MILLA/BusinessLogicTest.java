@@ -82,7 +82,41 @@ public class BusinessLogicTest {
 
         	assertEquals(false, bl.isValidInput(-1));
         }
+
+
+	@Test
+        public void testMarkNodeForPlayer1()
+        {
+       	    Player player1 = new Player(1, "Morgan");
+            Player player2 = new Player(2, "Nicolas");
+
+            BusinessLogic bl = new BusinessLogic(player1, player2);
+
+            bl.markNode(1, 0);
+
 	
+            String compareString = "-------------\n| O | 2 | 3 |\n-------------\n| 4 | 5 | 6 |\n-------------\n| 7 | 8 | 9 |\n-------------\n";
+
+            assertEquals(compareString, bl.getGrid());
+        }
+
+
+
+        @Test
+        public void testMarkNodeForPlayer2()
+        {
+            Player player1 = new Player(1, "Morgan");
+            Player player2 = new Player(2, "Nicolas");
+
+            BusinessLogic bl = new BusinessLogic(player1, player2);
+
+            bl.markNode(1, 1);
+		
+            String compareString = "-------------\n| X | 2 | 3 |\n-------------\n| 4 | 5 | 6 |\n-------------\n| 7 | 8 | 9 |\n-------------\n";
+            assertEquals(compareString, bl.getGrid());
+        }
+
+		
 	
 }
 
