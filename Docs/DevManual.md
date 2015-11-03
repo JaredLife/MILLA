@@ -12,7 +12,7 @@
 
 ### Til að setja upp verkefnið á tölvuna þarf að fylgja þessum þrepum: ###
 
-1. Up to date Linux workstation
+1. Ná í SSH client - Hópurinn okkar notaði putty
 2. Ná java  → sudo apt-get install openjdk-7-jdk
 3. Ná í git → sudo apt-get install git
 4. Tengjast github verkefninu → git clone git@github.com:JaredLife/MILLA.git
