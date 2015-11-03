@@ -40,8 +40,9 @@
 * bin/run - Runnar það
 * bin/unit_test - Testar það
 
+
 * Verkefnið er byggt upp á Gradle og er það innbyggt.
 
-## Test the code ##
+## Prufa kóðan - Test the code ##
 * Til að gera Unit test þá notum við Gradle sem er tengt við JUnit , scripturnar okkar í bin keyra Gradle wrapper með að nota skipunina → /bin/unit_test
-* You can see the code coverage in the [README](README.md) and also at the [CodeCov website](https://codecov.io/github/JaredLife/MILLA)
+* Til að sjá code coverage í [README](README.md) og líka á [CodeCov vefsíðunni](https://codecov.io/github/JaredLife/MILLA)
