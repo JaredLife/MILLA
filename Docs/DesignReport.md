@@ -52,39 +52,32 @@
 
 ## Klasar ##
 
-###Grid - Prentar út borðið og win lógík###
-
+###Grid - Griddið býr til Nóður frá 1-9, og win lógík###
 *Grid()
-
 *getNodes()
-
 *changeNodeOwnerInGrid(Player owner, int nodeNumber)
-
 *toString()
-
 *isWinner()
 
 ###Player - Býr til leikmann###
-
 *Player(int number, String name)
-
 *getNumber()
-
 *getName()
-
 *getSymbol()
 
 
-###Node - Nóður frá 1-9, ef leikmaður á tiltekna nóðu er það x eða o, en ef enginn á er null.###
-
+###Node - Nóða á tilvik af leikmanni en ef enginn nóða á leikmann er tilvikið null.###
 *Node(int num)
-
 *setOwner(Player player)
-
 *isEmpty()
-
 *getOwner()
-
 *getNumber()
 
-####TicTacToe.java hefur svo aðgang að þessum 3 klösum og byggir forritið####
+###BusinessLogic - Logíkin fer fram hér - Milli lagið  ###
+*BusinessLogic(Player newPlayer1, Player newPlayer2)
+*getGrid()
+*isValidInput(int input)
+*markNode(int input, int tunNum)
+*bingo()
+
+####TicTacToe.java Keyrir leik af TicTacToe. Á eintak af öllum ofangreindum klösum.####
