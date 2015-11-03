@@ -53,23 +53,23 @@
 ## Klasar ##
 
 *Grid - Prentar út borðið og win lógík
-** Grid()
-** getNodes()
-** changeNodeOwnerInGrid(Player owner, int nodeNumber)
-** toString()
-** isWinner()
+**Grid()
+**getNodes()
+**changeNodeOwnerInGrid(Player owner, int nodeNumber)
+**toString()
+**isWinner()
 
 *Player - Býr til leikmann
-** Player(int number, String name)
-** getNumber()
-** getName()
-** getSymbol()
+**Player(int number, String name)
+**getNumber()
+**getName()
+**getSymbol()
 
 *Node - Nóður frá 1-9 og á leikmaður einhverja nóðu er það x eða o, en ef enginn á nóðu er null.
-** Node(int num)
-** setOwner(Player player)
-** isEmpty()
-** getOwner()
-** getNumber()
+**Node(int num)
+**setOwner(Player player)
+**isEmpty()
+**getOwner()
+**getNumber()
 
-TicTacToe.java hefur svo aðgang að þessum 3 klösum og byggir forriti
+*TicTacToe.java hefur svo aðgang að þessum 3 klösum og byggir forriti
