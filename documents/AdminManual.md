@@ -13,6 +13,7 @@
 * Run the following scripts in the root folder to allow you to build and deploy:
 	* "./bin/buildAndTest"
 	* "./bin/deploy"
+
 *This creates a runable jar file in the tmp file of your computer. There you can ship it.
 
 ## Run the console application ##
