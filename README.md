@@ -17,7 +17,7 @@ The game TicTacToe!
 * Gunnar Páll Viðarsson
 
 ## Documentation ##
-* [Developers manual](documents/DevManual.md)
-* [Administration manual](documents/AdminManual.md) 
-* [Design report](documents/DesignReport.md)
+* [Developers manual](Docs/DevManual.md)
+* [Administration manual](Docs/AdminManual.md) 
+* [Design report](Docs/DesignReport.md)
 
