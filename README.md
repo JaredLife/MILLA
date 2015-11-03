@@ -10,12 +10,14 @@
 A Late-term Assignment in Hugb1 in Reykjavik University. 
 The game TicTacToe!
 
-## What you need: ##
-* JRE 1.8
-* Gradle
+## Members of team Royale with Cheese: ##
+* Jóhannes Páll Magnússon
+* Orri Ólafsson
+* Stefán Þór Halldórsson
+* Gunnar Páll Viðarsson
 
-## What you need to do to build and run: ##
-* Run the following build scripts:
-./gradlew installDist
-./build/install/MILLA/bin/MILLA
+## Documentation ##
+* [Developers manual](documents/DevManual.md)
+* [Administration manual](documents/AdminManual.md) 
+* [Design report](documents/DesignReport.md)
 
