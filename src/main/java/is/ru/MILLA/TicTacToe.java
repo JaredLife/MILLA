@@ -18,7 +18,7 @@ public class TicTacToe{
         {
 		clear();
                 System.out.println("Welcome to TicTacToe, an epic game of mind jousting");
-                System.out.println("Speak your names, mighty warriors!");
+                System.out.println("Speak your names, mighty warriors! and good luck");
 
         }
 
